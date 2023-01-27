@@ -9,10 +9,10 @@ const Profile = (props) => {
   const [catHappiness, setCatHappiness] = useState(0);
   const [user, setUser] = useState();
 
-  useEffect(() => {
-    document.title = "Profile Page";
-    get(`/api/user`, { userid: props.userId }).then((userObj) => setUser(userObj));
-  }, []);
+//   useEffect(() => {
+//     document.title = "Profile Page";
+//     get(`/api/user`, { userid: props.userId }).then((userObj) => setUser(userObj));
+//   }, []);
 
   const incrementCatHappiness = () => {
     setCatHappiness(catHappiness + 1);
